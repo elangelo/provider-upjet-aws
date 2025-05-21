@@ -5,6 +5,7 @@
 package config
 
 import (
+	"github.com/elangelo/provider-aws/config/fsx"
 	"github.com/upbound/provider-aws/config/acm"
 	"github.com/upbound/provider-aws/config/acmpca"
 	"github.com/upbound/provider-aws/config/apigateway"
@@ -46,7 +47,6 @@ import (
 	"github.com/upbound/provider-aws/config/elb"
 	"github.com/upbound/provider-aws/config/elbv2"
 	"github.com/upbound/provider-aws/config/firehose"
-	"github.com/upbound/provider-aws/config/fsx"
 	"github.com/upbound/provider-aws/config/gamelift"
 	"github.com/upbound/provider-aws/config/globalaccelerator"
 	"github.com/upbound/provider-aws/config/glue"
