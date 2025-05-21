@@ -24,7 +24,7 @@ func Configure(p *config.Provider) { //nolint:gocyclo
 			IgnoredFields: []string{"metadata_configuration"},
 		}
 
-		r.MetaResouce.Description += "SAMUEL!!"
+		r.MetaResource.Description += "SAMUEL!!"
 
 		r.Path = "Samuel"
 	})
