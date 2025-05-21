@@ -5,7 +5,7 @@
 package config
 
 import (
-	"github.com/elangelo/provider-aws/config/fsx"
+	"github.com/elangelo/provider-upjet-aws/config/fsx"
 	"github.com/upbound/provider-aws/config/acm"
 	"github.com/upbound/provider-aws/config/acmpca"
 	"github.com/upbound/provider-aws/config/apigateway"
