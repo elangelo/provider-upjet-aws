@@ -37,7 +37,6 @@ img.build:
 img.build.shared:
 	@cp Dockerfile $(IMAGE_TEMP_DIR) || $(FAIL)
 	@docker buildx build $(BUILD_ARGS) \
-		--platform $(IMAGE_PLATFORMS) \
 		--build-arg CROSSPLANE_PROVIDER_VERSION=$(VERSION) \
 		-t $(IMAGE) \
 		$(IMAGE_TEMP_DIR) || $(FAIL)
