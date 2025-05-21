@@ -21,7 +21,9 @@ func Configure(p *config.Provider) { //nolint:gocyclo
 
 	p.AddResourceConfigurator("aws_fsx_lustre_file_system", func(r *config.Resource){
         r.LateInitializer = config.LateInitializer{
-			IgnoredFields: []string{"metadata_configuration", "efa_enabled"},
+			IgnoredFields: []string{"metadata_configuration"},
 		}
+
+		r.Path = "Samuel"
 	})
 }
