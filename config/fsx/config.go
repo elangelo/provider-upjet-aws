@@ -18,4 +18,12 @@ func Configure(p *config.Provider) { //nolint:gocyclo
 			Extractor:     common.PathARNExtractor,
 		}
 	})
+
+	p.AddResourceConfigurator("aws_fsx_lustre_file_system", func(r *config.Resource) {
+		r.LateInitializer = config.LateInitializer{
+			IgnoredFields: []string{
+				"metadata_configuration",
+			},
+		}
+	})
 }
