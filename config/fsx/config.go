@@ -19,7 +19,7 @@ func Configure(p *config.Provider) { //nolint:gocyclo
 		}
 	})
 
-	p.AddResourceConfigurator("aws_lustre_fsx_file_system", func(r *config.Resource) {
+	p.AddResourceConfigurator("aws_fsx_lustre_file_system", func(r *config.Resource) {
 		delete(r.TerraformResource.Schema, "metadata_configuration")
 	})
 }
