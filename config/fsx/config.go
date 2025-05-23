@@ -18,4 +18,8 @@ func Configure(p *config.Provider) { //nolint:gocyclo
 			Extractor:     common.PathARNExtractor,
 		}
 	})
+
+	p.AddResourceConfigurator("aws_lustre_fsx_file_system", func(r *config.Resource) {
+		delete(r.TerraformResource.Schema, "metadata_configuration")
+	})
 }
